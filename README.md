@@ -4,6 +4,6 @@ The mitochondrial genome will be assembled and annotated for _Teleopsis dalmanni
 This repository will contain:
 - Notes and scripts for running MitoHiFi 
 - Mitochondrial genome analysis pipeline
-- Python script for mitogenome analysis
+- Python scripts for mitogenome analysis
 - Reference genome fasta and genbank files
-- Results from mitogenome analysis
+- Results from mitogenome analysis, etc.
