@@ -7,9 +7,9 @@ MitoHifi was installed manually with each dependency installed and exported to m
 ## Input data
 
 - Two options: raw PacBio HiFi reads (-f) or assembled contigs (-c)
-- Reference mitochondrial genome in FASTA or GenBank format (for _Teleopsis dalmanni_ --> _Nothybus sumatranus_)
+- Reference mitochondrial genome in FASTA or GenBank format
 
-Reference genome identified using python script provided by MitoHiFi, which identifies and downloads most closely-related reference genome from NCBI. This was identified as *Loxocera sinica* (i.e. rust fly), for more info refer to the [NCBI website](https://www.ncbi.nlm.nih.gov/nuccore/NC_065368.1).
+Reference genome identified using python script provided by MitoHiFi, which identifies and downloads most closely-related reference genome from NCBI. For *Teleopsis dalmanni* this was identified as *Loxocera sinica* (i.e. rust fly), for more info refer to the [NCBI website](https://www.ncbi.nlm.nih.gov/nuccore/NC_065368.1).
 
 ## Code
 
