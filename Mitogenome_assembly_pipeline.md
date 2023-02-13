@@ -1,6 +1,6 @@
 # **MitoHiFi V2.2**
 
-Using [MitoHiFi ](https://github.com/marcelauliano/MitoHiFi) to assemble and annotate  _T. dalmanni_ mitochondrial genome. Reads provided by [UCL](https://www.ucl.ac.uk/~ucbhpom/).
+Using [MitoHiFi ](https://github.com/marcelauliano/MitoHiFi) to assemble and annotate  _T. dalmanni_ mitochondrial genome, with HiFi raw reads provided by [UCL](https://www.ucl.ac.uk/~ucbhpom/).
 
 MitoHifi was installed manually with each dependency installed and exported to my PATH on Sheffield HPC shARC.
 
