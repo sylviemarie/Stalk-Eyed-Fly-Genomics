@@ -27,7 +27,7 @@ Alternatively, run MitoHiFi on a merged HiFi reads file (merged.fasta)
 
 ## Output files
 
-Successful completion of MitoHiFi should produce a series out output files.
+Successful completion of MitoHiFi should produce a series of output files.
 - final_mitogenome.fasta - the final mitochondria circularized and rotated to start at tRNA-Phe
 - final_mitogenome.gb - the final mitochondria annotated in GenBank format.
 - final_mitogenome.coverage.png - the sequencing coverage throughout the final mitogenome
