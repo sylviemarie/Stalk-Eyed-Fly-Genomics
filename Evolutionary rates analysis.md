@@ -2,6 +2,7 @@
 Pipeline to 
 
 1. Identify reciprocal orthologs
+- For the stalk-eyed fly mitochondrial genome, running the 00.get-longest-isoform.py script is not necessary as there is only one transcript per gene.
 
 2. Identify open reading frames
 
