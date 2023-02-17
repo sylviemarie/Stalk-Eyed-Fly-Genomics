@@ -1,4 +1,4 @@
-# Evolutionary-rates-analysis
+# Evolutionary rates analysis
 ## Overview of pipeline: 
 
 1. Identify reciprocal orthologs
