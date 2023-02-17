@@ -1,5 +1,5 @@
 # Evolutionary-rates-analysis
-Overview of pipeline: 
+## Overview of pipeline: 
 
 1. Identify reciprocal orthologs
       - Running the 00.get-longest-isoform.py script is not necessary as there is only one transcript per gene for the stalkie mitogenome.
