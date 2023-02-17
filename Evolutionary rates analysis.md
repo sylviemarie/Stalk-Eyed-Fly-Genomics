@@ -2,7 +2,15 @@
 Pipeline to 
 
 1. Identify reciprocal orthologs
-- For the stalk-eyed fly mitochondrial genome, running the 00.get-longest-isoform.py script is not necessary as there is only one transcript per gene.
+      - Running the 00.get-longest-isoform.py script is not necessary as there is only one transcript per gene for the stalkie mitogenome.
+      - For 01.run-blastall.py script, need to select and download a series of input mitochondrial genomes (protein seq.) you want to blast against each other.
+          - Fruit fly (*Drosophila melanogaster*) DONE
+          - Meadow grasshopper (*Chorthippus parallelus*) DONE
+          - Hawaiian cricket (*Teleogryllus oceanicus*) DONE
+          - Kelp/seaweed fly (*Coelopa spp.*) DONE
+          - Yellow dung fly (*Scathophaga stercoraria*) DONE
+          - Flour beetle (*Tribolium castaneum*) DONE
+          - Heliconius butterfly (*Heliconius melpomene*)
 
 2. Identify open reading frames
 
