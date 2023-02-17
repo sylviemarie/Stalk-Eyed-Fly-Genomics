@@ -1,0 +1,30 @@
+# Linux: Convert single-line into multi-line fasta file, # = characters per line (70 is default)
+fold -b -w 70 name.fasta
+
+# Linux: Clean up PATH, i.e. remove duplicate paths added to PATH
+export PATH="$(echo "$PATH" |/bin/awk 'BEGIN{RS=":";}
+{sub(sprintf("%c$",10),"");if(A[$0]){}else{A[$0]=1;
+printf(((NR==1)?"":":")$0)}}')";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
