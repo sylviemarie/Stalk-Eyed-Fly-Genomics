@@ -12,6 +12,8 @@ echo $PATH | tr ":" "\n"
 # Check data storage of directory
 du -sh *
 
+# Open tar zipped file
+tar -zxvf file_name.tar.gz
 
 
 
