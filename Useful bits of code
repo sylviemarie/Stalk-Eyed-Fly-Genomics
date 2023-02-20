@@ -9,6 +9,9 @@ printf(((NR==1)?"":":")$0)}}')";
 # Linux: Check directories that exist in current path that are stored in PATH
 echo $PATH | tr ":" "\n"
 
+# Check data storage of directory
+du -sh *
+
 
 
 
