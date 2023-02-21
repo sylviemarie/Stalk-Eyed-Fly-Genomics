@@ -15,6 +15,12 @@ du -sh *
 # Open tar zipped file
 tar -zxvf file_name.tar.gz
 
+# View zipped file
+zcat
+
+# View data not in terminal using a pipe
+.... | less
+
 # Request extra nodes/space interactive session (X gigabytes of memory, 1 node, run on ressexcon server)
 qrshx -l rmem=XG -pe smp 1 -P ressexcon -q ressexcon.q
 
