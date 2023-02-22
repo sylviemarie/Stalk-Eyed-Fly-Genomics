@@ -18,6 +18,9 @@ tar -zxvf file_name.tar.gz
 # View zipped file
 zcat
 
+#Grab words from zipped file
+zgrep
+
 # View data not in terminal using a pipe
 .... | less
 
