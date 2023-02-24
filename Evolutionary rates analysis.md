@@ -4,6 +4,8 @@
 1. Identify reciprocal orthologs
       - Running the 00.get-longest-isoform.py script is not necessary as there is only one transcript per gene for the stalkie mitogenome.
       - For 01.run-blastall.py script, need to select and download a series of input mitochondrial genomes (protein seq.) you want to blast against each other.
+      - Path to NCBI Blast /usr/local/extras/Genomics/apps/ncbi-blast/2.8.1
+
           - Fruit fly (*Drosophila melanogaster*) DONE
           - Meadow grasshopper (*Chorthippus parallelus*) DONE
           - Hawaiian cricket (*Teleogryllus oceanicus*) DONE
