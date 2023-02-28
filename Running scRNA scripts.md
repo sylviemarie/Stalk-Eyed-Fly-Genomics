@@ -33,4 +33,14 @@ Request 64GB of memory, 4 nodes on cluster, specifically these nodes
 | -s | Path to samples | /fastdata/bop22smp/stalkie_scRNA/R_Data/samples.txt | 
 | -c | Path to cell markers | /fastdata/bop22smp/stalkie_scRNA/R_Data/cell_cycle_markers_complete.csv | 
 
+## Newer way using conda environment
+Create the new conda environment:
+> conda create -n seurat -c bioconda -c conda-forge r-seurat r-base r-optparse r-tidyverse r-matrix r-scales r-cowplot r-rcurl r-stringr r-ggpubr
+
+Activate the environmentt:
+> conda activate seurat
+
+Deactivate the environment:
+> conda deactivate 
+
 
