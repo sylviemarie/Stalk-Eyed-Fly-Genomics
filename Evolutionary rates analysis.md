@@ -43,6 +43,8 @@ A list of input genomes is blasted against each other and output is written in p
 This script takes the outputs blast files of a reciprocal blast. 
 First, identifies tophit for each blast. Minimum 30 pidentity, then picks the tophit with greatest bitscore. If bitscores are identical then the blast hit with greatest pidentity is picked as the tophit. If multiple sequenced have the same bitscore and pidentity, the ortholog is discarded. Second, finds 1-1 reciprocal orthologs. The blastout output format supported is:
 "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq"
+>  python new_top_hit.py -i /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit/input_blast -o /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit
+
 
 * **python 03.ortho-cluster.py**
 This script takes the pickle output of reciprocal orthologs and identifies clusters of reciprocal orthologs.
