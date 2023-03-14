@@ -38,6 +38,9 @@ A list of input genomes is blasted against each other and output is written in p
   Input genomes are fasta files containing one isoform per gene. Naming of fasta files must be as follows: Speciesname_longest.fasta eg Oryziaslaptipes_longest.fasta. [BLAST](http://blast.ncbi.nlm.nih.gov/Blast.cgi) must be compiled and added to the path of the user.
   
    >python 1.run-blastall.py -e 10e-10 -b blastn -p 4 -f "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq" species1_longest.fasta species2_longest.fa species3_longest.fasta species4_longest.fa
+   
+   >python 01.run_blast_all.py -e 10e-10 -b /usr/local/extras/Genomics/apps/ncbi-blast/current/bin/blastn -p 4 -f "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq" Teleopsisdalmanni_longest.fasta Anophelesgambiae_longest.fasta Apismellifera_longest.fasta Drosophilamelanogaster_longest.fasta Heliconiusmelpomene_longest.fasta Zootermopsisnevadensis_longest.fasta
+
 
 * **python 02.top-blasthit.py**
 This script takes the outputs blast files of a reciprocal blast. 
