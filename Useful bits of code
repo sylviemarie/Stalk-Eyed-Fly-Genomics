@@ -27,6 +27,10 @@ zgrep
 # Request extra nodes/space interactive session (X gigabytes of memory, 1 node, run on ressexcon server)
 qrshx -l rmem=XG -pe smp 1 -P ressexcon -q ressexcon.q
 
+# Path to blastn
+/usr/local/extras/Genomics/apps/ncbi-blast/current/bin/blastn
+
+
 
 
 
