@@ -35,7 +35,7 @@ This script processes an Ensembl fasta file and picks the longest isoform for ea
 This script automatizes a complete reciprocal besthit blast analysis.
 A list of input genomes is blasted against each other and output is written in provided format. Name of outfile is db name.query name.bla. Run with "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq".
 
-  Input genomes are fasta files containing one isoform per gene. Naming of fasta files must be as follows: Speciesname_longest.fasta eg Oryziaslaptipes_longest.fasta. [BLAST](http://blast.ncbi.nlm.nih.gov/Blast.cgi) must be compiled and added to the path of the user. * When it is added to PATH, no need to specify the path to blastn in the code.*
+  Input genomes are fasta files containing one isoform per gene. Naming of fasta files must be as follows: Speciesname_longest.fasta eg Oryziaslaptipes_longest.fasta. [BLAST](http://blast.ncbi.nlm.nih.gov/Blast.cgi) must be compiled and added to the path of the user. *When it is added to PATH, no need to specify the path to blastn in the code.*
 
 
    > Template: python 1.run-blastall.py -e 10e-10 -b blastn -p 4 -f "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq" species1_longest.fasta species2_longest.fa species3_longest.fasta species4_longest.fa
