@@ -6,13 +6,12 @@
       - For 01.run-blastall.py script, need to select and download a series of input mitochondrial genomes (protein seq.) you want to blast against each other.
       - Path to NCBI Blast /usr/local/extras/Genomics/apps/ncbi-blast/2.8.1
 
-          - Fruit fly (*Drosophila melanogaster*) DONE
-          - Meadow grasshopper (*Chorthippus parallelus*) DONE
-          - Hawaiian cricket (*Teleogryllus oceanicus*) DONE
-          - Kelp/seaweed fly (*Coelopa spp.*) DONE
-          - Yellow dung fly (*Scathophaga stercoraria*) DONE
-          - Flour beetle (*Tribolium castaneum*) DONE
+          - Fruit fly (*Drosophila melanogaster*) 
+          - African malaria mosquito (*Anopheles gambiae*)
+          - Dampwood termite (*Zootermopsis nevadensis*)
+          - Western Honeybee (*Apis mellifera*)
           - Heliconius butterfly (*Heliconius melpomene*)
+          - Stalk-eyed fly (*Teleopsis dalmanni*)
 
 2. Identify open reading frames
 
@@ -47,7 +46,7 @@ A list of input genomes is blasted against each other and output is written in p
 This script takes the outputs blast files of a reciprocal blast. 
 First, identifies tophit for each blast. Minimum 30 pidentity, then picks the tophit with greatest bitscore. If bitscores are identical then the blast hit with greatest pidentity is picked as the tophit. If multiple sequenced have the same bitscore and pidentity, the ortholog is discarded. Second, finds 1-1 reciprocal orthologs. The blastout output format supported is:
 "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq"
->  python new_top_hit.py -i /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit/input_blast -o /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit
+   >  python new_top_hit.py -i /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit/input_blast -o /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit
 
 
 * **python 03.ortho-cluster.py**
