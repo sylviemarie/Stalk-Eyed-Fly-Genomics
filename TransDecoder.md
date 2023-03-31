@@ -29,8 +29,8 @@ Step 2: Predict gene structures using long ORFs
  > TransDecoder.Predict -t final_annotation_NT.fasta --no_refine_starts
 
  ### Output = 
-- final_annotation_NT.fasta.transdecoder.bed 
-- final_annotation_NT.fasta.transdecoder.gff3
-- final_annotation_NT.fasta.transdecoder.cds
-- final_annotation_NT.fasta.transdecoder.pep
+- final_annotation_NT.fasta.transdecoder.bed = bed-formatted file describing ORF positions, best for viewing using GenomeView or IGV.
+- final_annotation_NT.fasta.transdecoder.gff3 = positions within the target transcripts of the final selected ORFs
+- final_annotation_NT.fasta.transdecoder.cds = nucleotide sequences for coding regions of the final candidate ORFs
+- final_annotation_NT.fasta.transdecoder.pep = peptide sequences for the final candidate ORFs; all shorter candidates within longer ORFs were removed.
 
