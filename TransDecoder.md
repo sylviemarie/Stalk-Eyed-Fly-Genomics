@@ -1,4 +1,4 @@
-## TransDecoder software
+# TransDecoder software
 
 [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki) is used to identify coding regions with transcript sequences, based on the follow criteria:
 - Minimum open reading frame (ORF) found in transcript sequence
@@ -10,12 +10,12 @@
 
 Version used: 5.7.0
 
-### Installation with conda:
+## Installation with conda:
  > conda create transdecoder -c bioconda transdecoder
  
  > conda activate transdecoder
 
-### Running transdecoder:
+## Running transdecoder:
 Input = predicted genes from stalk-eyed fly mitochondrial genome (final_annotation_NT.fasta).
 
 All parameters are listed [here](https://github.com/TransDecoder/TransDecoder/blob/master/Changelog.txt).
