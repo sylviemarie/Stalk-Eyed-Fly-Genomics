@@ -16,7 +16,8 @@ Version used: 5.7.0
  > conda activate transdecoder
 
 ### Running transdecoder:
-Input = predicted genes from stalk-eyed fly mitochondrial genome (final_annotation_NT.fasta)
+Input = predicted genes from stalk-eyed fly mitochondrial genome (final_annotation_NT.fasta).
+
 All parameters are listed [here](https://github.com/TransDecoder/TransDecoder/blob/master/Changelog.txt).
 
 Step 1: Extract long ORFs from predicted genes
