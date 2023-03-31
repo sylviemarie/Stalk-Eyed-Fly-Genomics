@@ -1,4 +1,4 @@
-# TransDecoder software
+# _TransDecoder software_
 
 [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki) is used to identify coding regions with transcript sequences, based on the follow criteria:
 - Minimum open reading frame (ORF) found in transcript sequence
@@ -28,7 +28,7 @@ Step 2: Predict gene structures using long ORFs
 
  > TransDecoder.Predict -t final_annotation_NT.fasta --no_refine_starts
 
- ## TransDecoder output  
+ ## TransDecoder output:
 - final_annotation_NT.fasta.transdecoder.bed = bed-formatted file describing ORF positions, best for viewing using GenomeView or IGV
 - final_annotation_NT.fasta.transdecoder.gff3 = positions within the target transcripts of the final selected ORFs
 - final_annotation_NT.fasta.transdecoder.cds = nucleotide sequences for coding regions of the final candidate ORFs
