@@ -27,3 +27,10 @@ Step 1: Extract long ORFs from predicted genes
 Step 2: Predict gene structures using long ORFs
 
  > TransDecoder.Predict -t final_annotation_NT.fasta --no_refine_starts
+
+Output = 
+- final_annotation_NT.fasta.transdecoder.bed 
+- final_annotation_NT.fasta.transdecoder.gff3
+- final_annotation_NT.fasta.transdecoder.cds
+- final_annotation_NT.fasta.transdecoder.pep
+
