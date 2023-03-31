@@ -15,7 +15,7 @@ Version used: 5.7.0
  
  > conda activate transdecoder
 
-## Running transdecoder:
+## Running TransDecoder:
 Input = predicted genes from stalk-eyed fly mitochondrial genome (final_annotation_NT.fasta).
 
 All parameters are listed [here](https://github.com/TransDecoder/TransDecoder/blob/master/Changelog.txt).
@@ -28,7 +28,7 @@ Step 2: Predict gene structures using long ORFs
 
  > TransDecoder.Predict -t final_annotation_NT.fasta --no_refine_starts
 
- ### Output = 
+ ## TransDecoder output  
 - final_annotation_NT.fasta.transdecoder.bed = bed-formatted file describing ORF positions, best for viewing using GenomeView or IGV
 - final_annotation_NT.fasta.transdecoder.gff3 = positions within the target transcripts of the final selected ORFs
 - final_annotation_NT.fasta.transdecoder.cds = nucleotide sequences for coding regions of the final candidate ORFs
