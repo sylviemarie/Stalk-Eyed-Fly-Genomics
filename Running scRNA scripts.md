@@ -5,13 +5,18 @@
 This can be done on R/RStudio/Linux environment. But it's more efficient to run these analyses using R on an HPC cluster if using large datasets. If running it on a Linux environment, intiate a interactive or tmux session. If issues with R arise when trying to install all the R packages needed for Seurat, create a Conda environment.
 
 > qrsh
+
 > conda create -n seurat_scRNA -c bioconda -c conda-forge r-seurat r-base r-optparse r-tidyverse r-matrix r-scales r-cowplot r-rcurl r-stringr r-ggpubr
->  module load apps/R/4.2.1/gcc-8.2.0
+
+> module load apps/R/4.2.1/gcc-8.2.0
+
 > R
 
 Now check if R packages installed properly 'library("Seurat")', if not install them manually one-by-one
 > install.packages("Seurat")
+
 > install.packages("tidyverse")
+
 > install.packages("dplyr") ... Matrix ... scales ... cowplot ... Rcurl ... stringr ... ggpubr ... future ... future.apply
 
 ## Personal library for R packages
