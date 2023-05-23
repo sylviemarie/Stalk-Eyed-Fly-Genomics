@@ -6,11 +6,11 @@
       - For 01.run-blastall.py script, need to select and download a series of input mitochondrial genomes (protein seq.) you want to blast against each other.
       - Path to NCBI Blast /usr/local/extras/Genomics/apps/ncbi-blast/2.8.1
 
-          - Fruit fly (*Drosophila melanogaster*) 
+          - Fruit fly (*Drosophila melanogaster*) -- family Drosophilidae
           - African malaria mosquito (*Anopheles gambiae*)
-          - Dampwood termite (*Zootermopsis nevadensis*)
           - Western Honeybee (*Apis mellifera*)
-          - Heliconius butterfly (*Heliconius melpomene*)
+          - Domestic silk moth (*Bombyx mori*)
+          - Queensland fruit fly (*Bactrocera tryoni*) -- family Tephritidae
           - Stalk-eyed fly (*Teleopsis dalmanni*)
 
 2. Identify open reading frames
