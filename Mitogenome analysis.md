@@ -3,6 +3,8 @@
 - Identify orthologs, genes in different species that evolved from a common ancestor, across species to identify nuclear mitochondrial genes
 - Estimate rates of evolution of coding sequences
 
+![image](https://github.com/SylvieMParkus/Stalk-Eyed-Fly-Genomics/assets/116887272/b582bb2d-8ffd-41d8-91dc-f883395591fa)
+
 ![image](https://github.com/SylvieMParkus/Stalk-Eyed-Fly-Genomics/assets/116887272/80809394-19b5-4fdd-81e7-05dd53e14306)
 
 ## Python scripts pipeline:
