@@ -1,0 +1,11 @@
+PRANK (windows):
+
+1) Install Cygwin terminal, select packages during installation (ex. unzip)
+2) Ensure Cygwin is installed at 'C:\cygwin64'
+2) Download PRANK zip file
+3) Move PRANK zip file into the Cygwin directory 'C:\cygwin64\home\username'
+4) Open Cygwin and type the commands:
+	> cd
+	> unzip prank.cygwin.*.zip 
+5) Start PRANK within Cygwin terminal with the command:
+	> ./prank.cygwin/prank/bin/prank
