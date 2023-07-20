@@ -9,5 +9,5 @@ PRANK website: http://wasabiapp.org/software/prank/#Using_PRANK
 4) Open Cygwin and type the commands:
 	> cd
 	> unzip prank.cygwin.*.zip 
-5) Start PRANK within Cygwin terminal with the command:
-	> ./prank.cygwin/prank/bin/prank
+5) Start/run PRANK within Cygwin terminal with the command:
+	> ./prank.cygwin/prank/bin/prank -d=[input_file] -t=[tree_file] -o=[output_file] -F -showxml
