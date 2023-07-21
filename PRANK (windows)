@@ -6,8 +6,20 @@ PRANK website: http://wasabiapp.org/software/prank/#Using_PRANK
 2) Ensure Cygwin is installed at 'C:\cygwin64'
 2) Download PRANK zip file
 3) Move PRANK zip file into the Cygwin directory 'C:\cygwin64\home\username'
+
+Note: [All files should be in one directory (analysis) ... \home\username\analysis]
+
 4) Open Cygwin and type the commands:
 	> cd
 	> unzip prank.cygwin.*.zip 
 5) Start/run PRANK within Cygwin terminal with the command:
+   -F = algorithm does not incorrectly penalise for gaps for insertions but it will also not guarantee to leave the insertions unmatched
+   -showxml = specifies that the output is also written in HSAML format, compatible for Wasabi import (including the alignment phylogeny)
 	> ./prank.cygwin/prank/bin/prank -d=[input_file] -t=[tree_file] -o=[output_file] -F -showxml
+
+6) Run PRANK with Alison's suggestions for parameters (-DNA, -codon, -once)
+   -codon = codon alignment
+   -DNA =  PRANK attempts to back-translate the input protein alignment to the corresponding DNA alignment
+   -once = disables default iteration
+	> ./prank.cygwin/prank/bin/prank -d=[input_file] -t=[tree_file] -o=[output_file] -codon -DNA -once
+	> ./prank.cygwin/prank/bin/prank -d=cob-1.stripped.cdna.fa -t=rooted_tree.txt -o=output_file_cob -codon -DNA -once
