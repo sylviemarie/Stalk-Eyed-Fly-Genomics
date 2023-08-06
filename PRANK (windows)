@@ -23,3 +23,38 @@ Note: [All files should be in one directory (analysis) ... \home\username\analys
    -once = disables default iteration
 	> ./prank.cygwin/prank/bin/prank -d=[input_file] -t=[tree_file] -o=[output_file] -codon -DNA -once
 	> ./prank.cygwin/prank/bin/prank -d=cob-1.stripped.cdna.fa -t=rooted_tree.txt -o=output_file_cob -codon -DNA -once
+
+To run python script that uses PRANK:
+- Move all files into /home/Smpar/analysis/prank.cygwin/prank/bin
+- Need to have PRANK linked within Python script (example below)
+- Run like a normal python script on an HPC
+	> python convert3.py -i phylip_input -u ".Nrm.fa"
+
+Example from script that converts FASTA to PHYLIP file format (convert3.py):
+def main():
+    '''Main runs only when the file itself is executed.
+    If a part of the script is imported, main will not be executed.'''
+    makeprankrun = []
+    infiles = list_folder(args.infolder)
+    print(infiles)
+    # Creates the prank commands for each file supplied.
+    for infile in infiles:
+        for inf in list_files(infile):
+            print(inf)
+            outpath = os.path.dirname(inf)
+            outfile = outpath + "/" + os.path.dirname(inf).split("/")[-1].split(".")[0]
+            makeprankrun.append(["./prank", "-convert", "-d=" + inf,
+                                 "-f=paml",
+                                 "-o=" + outfile,
+                                 "-keep"
+                                 ])
+
+    # Passes the makeprankrun commands (a list of lists) to the exec_commands
+    # function and executes them in parallel.
+    exec_in_row(makeprankrun)
+
+
+if __name__ == "__main__":
+    main()
+
+
