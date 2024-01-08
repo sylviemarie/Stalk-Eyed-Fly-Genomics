@@ -6,6 +6,6 @@ The mitochondrial genome will be assembled and annotated for _Teleopsis dalmanni
 - Notes and scripts for running MitoHiFi 
 - Mitochondrial genome analysis pipeline 
 - Python scripts for mitogenome analysis
-- Insect mitogenomes used for reciprocal best hit (RBH) BLAST (proxy for othology in comp. gen.)
+- Insect mitogenomes used for reciprocal best hit (RBH) BLAST 
 - Results from mitogenome analysis
 - Useful bits of code
