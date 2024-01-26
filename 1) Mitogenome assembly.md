@@ -2,7 +2,7 @@
 
 Using [MitoHiFi ](https://github.com/marcelauliano/MitoHiFi) to assemble and annotate  _T. dalmanni_ mitochondrial genome, with HiFi raw reads provided by [UCL](https://www.ucl.ac.uk/~ucbhpom/).
 
-Initially, MitoHifi was installed manually with each dependency installed and exported to my PATH on Sheffield HPC. However, this presented a plethora of issues getting MitoHiFi to ***start*** running and then getting it to do a complete run. The better installation method was using the Apptainer container platform.
+Initially, MitoHifi was installed manually with each dependency installed and exported to my PATH on Sheffield HPC. However, this presented a plethora of issues getting MitoHiFi to ***start*** running and then getting it to do a complete run. The better method was using the Apptainer container platform to install MitoHiFi on an HPC.
 
 ## Input data
 
@@ -19,7 +19,7 @@ Activate python
 > py39 mitohifi.py --help
 
 Run MitoHiFi with raw reads (r), reference genome fasta file (f), and reference genome genebank file (gb).
-Alter parameters if necessary (t/threads = 1, o/organism genetic code = 5 (for invertebrates).
+Alter parameters if necessary (t/threads = 1, o/organism genetic code = 5 (for invertebrate mitochondria).
 > python /usr/local/extras/Genomics/bin/mitohifi.py -r /fastdata/bop22smp/sylvie/mitogenome/m64157e_210730_141553.hifi_reads.fasta -r /fastdata/bop22smp/sylvie/mitogenome/m64157e_211024_013127.hifi_reads.fasta -f /fastdata/bop22smp/sylvie/mitogenome/NC_065368.1.fasta -g /fastdata/bop22smp/sylvie/mitogenome/NC_065368.1.gb -t 1 -o 5
 
 Alternatively, run MitoHiFi on a merged HiFi reads file (merged.fasta)
@@ -27,7 +27,7 @@ Alternatively, run MitoHiFi on a merged HiFi reads file (merged.fasta)
 
 ## Output files
 
-Successful completion of MitoHiFi should produce a series of output files.
+Successful completion of MitoHiFi should produce a series of output files. The main annotation file will be a .gb and not a .gff/.gtf file.
 - final_mitogenome.fasta - the final mitochondria circularized and rotated to start at tRNA-Phe
 - final_mitogenome.gb - the final mitochondria annotated in GenBank format.
 - final_mitogenome.coverage.png - the sequencing coverage throughout the final mitogenome
