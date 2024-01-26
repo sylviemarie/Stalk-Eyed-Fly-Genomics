@@ -1,3 +1,6 @@
+### Note: encountered many issues running MitoHiFi and subsequent softwares when .bashrc code was wrong.
+
+
 # .bashrc
 
 # Source global definitions
