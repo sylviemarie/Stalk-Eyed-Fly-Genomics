@@ -6,7 +6,6 @@
 #$ -P ressexcon
 #$ -q ressexcon.q
 
-
 /usr/local/extras/Genomics/apps/anaconda_python/envs/mamba/bin/conda init bash
 
 source ~/.bashrc
