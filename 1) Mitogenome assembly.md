@@ -40,7 +40,6 @@ Successful completion of MitoHiFi should produce a series of output files. The m
 For more detailed description of output files, refer back to [MitoHiFi ](https://github.com/marcelauliano/MitoHiFi)
 
 ## Notes
-I ran MitoHiFi several times, altering the parameters to determine to most robust assembly. 
-
+I ran MitoHiFi several times, altering the parameters to determine the most robust assembly. In the figure below, I have summarized the key differences in parameters and output of the four different types of runs, with Run 1 being the best and used in subsequent analyses.
 <img width="648" alt="Screen Shot 2024-01-26 at 4 00 52 PM" src="https://github.com/sylviemarie/Stalk-Eyed-Fly-Genomics/assets/116887272/b511b0e4-dd2e-47af-bb21-a085186596fc">
 
