@@ -1,0 +1,37 @@
+### Note: encountered many issues running MitoHiFi and subsequent softwares when .bashrc code was wrong.
+
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+PATH=$PATH:$HOME/bin
+
+if [[ -e '/usr/local/extras/Genomics' ]];
+then
+    source /usr/local/extras/Genomics/.bashrc
+fi
+
+#Path to software 
+export PATH="$PATH:/usr/local/extras/Genomics/apps/MitoFinder/bin"
+export PATH="$PATH:/usr/local/extras/Genomics/apps/ncbi-blast/current/bin"
+export PATH="/fastdata/bop22smp/.conda/envs/seurat/bin:$PATH"
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/extras/Genomics/apps/anaconda_python/envs/mamba/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/extras/Genomics/apps/anaconda_python/envs/mamba/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/extras/Genomics/apps/anaconda_python/envs/mamba/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/extras/Genomics/apps/anaconda_python/envs/mamba/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
