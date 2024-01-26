@@ -1,0 +1,59 @@
+# Linux: Convert single-line into multi-line fasta file, # = characters per line (70 is default)
+fold -b -w 70 name.fasta
+
+# Linux: Clean up PATH, i.e. remove duplicate paths added to PATH
+export PATH="$(echo "$PATH" |/bin/awk 'BEGIN{RS=":";}
+{sub(sprintf("%c$",10),"");if(A[$0]){}else{A[$0]=1;
+printf(((NR==1)?"":":")$0)}}')";
+
+# Linux: Check directories that exist in current path that are stored in PATH
+echo $PATH | tr ":" "\n"
+
+# Check data storage of directory
+du -sh *
+
+# Open tar zipped file
+tar -zxvf file_name.tar.gz
+
+# View zipped file
+zcat
+
+#Grab words from zipped file
+zgrep
+
+# View data not in terminal using a pipe
+.... | less
+
+# Request extra nodes/space interactive session (X gigabytes of memory, 1 node, run on ressexcon server)
+qrshx -l rmem=XG -pe smp 1 -P ressexcon -q ressexcon.q
+
+# Path to blastn
+/usr/local/extras/Genomics/apps/ncbi-blast/current/bin/blastn
+
+# Apptainer/docker code
+ apptainer exec docker://ghcr.io/marcelauliano/mitohifi:master mitohifi.py -r /fastdata/bop22smp/stalkie_mito/singularity_apptainer/apptainer_run3_new_ref/raw_data/merged.fasta -f /fastdata/bop22smp/stalkie_mito/singularity_apptainer/apptainer_run3_new_ref/raw_data/NC_065368.1.fasta -g /fastdata/bop22smp/stalkie_mito/singularity_apptainer/apptainer_run3_new_ref/raw_data/NC_065368.1.gb -t 2 -o 5 -d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
