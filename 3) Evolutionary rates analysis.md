@@ -2,24 +2,22 @@
 ## Overview of pipeline: 
 
 1. Identify reciprocal orthologs
-      - Running the 00.get-longest-isoform.py script is not necessary as there is only one transcript per gene for the stalkie mitogenome.
+      - Only need to run the 00.get-longest-isoform.py script if there is more than one transcript per gene for each genome.
       - For 01.run-blastall.py script, need to select and download a series of input mitochondrial genomes (protein seq.) you want to blast against each other.
-      - Path to NCBI Blast /usr/local/extras/Genomics/apps/ncbi-blast/2.8.1
-
           - Small fruit fly (*Drosophila melanogaster*) -- family Drosophilidae
           - African malaria mosquito (*Anopheles gambiae*)
           - Western Honeybee (*Apis mellifera*)
           - Domestic silk moth (*Bombyx mori*)
           - Queensland fruit fly (*Bactrocera tryoni*) -- family Tephritidae
           - Stalk-eyed fly (*Teleopsis dalmanni*)
-
 2. Identify open reading frames
-
-3. Align orthologs
-
-4. Mask alignments for poorly aligned regions
-
-5. Calculate evolutionary rates
+      - BLASTX
+4. Align orthologs
+      - PRANK software
+5. Mask alignments for poorly aligned regions
+      - MEGA software
+7. Calculate evolutionary rates
+      - PAML CODEML --> branch model and branch-site model
 
 ## 1. Identify reciprocal orthologs
 
