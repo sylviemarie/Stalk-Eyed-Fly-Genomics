@@ -2,7 +2,7 @@
 
 The CODEML program in the PAML package was used to calculate the rate of ortholog evolution and detect signatures of selection. While this program is known to be complex, [Alvarez-Carretero et al. in 2023](https://academic.oup.com/mbe/article/40/4/msad041/7140562) does a great job explaining it in an easily comprehensible way.
 
-PAML detects selection by estimating the ratio of non-synonymous to synonymous mutations (i.e. 𝜔 = 𝑑𝑁⁄𝑑𝑆 ), which is an incredible simplistic, but powerful metric used across evolutionary biology. Within the CODEML program, there are three types of tests that can be run. This metric 𝜔, is a measure of the intensity and mode of natural selection acting on a protein-coding sequence.
+PAML detects selection by estimating the ratio of non-synonymous to synonymous mutations (i.e. 𝜔 = 𝑑𝑁⁄𝑑𝑆 ), which is an incredible simplistic, but powerful metric used across evolutionary biology. This metric 𝜔, is a measure of the intensity and mode of natural selection acting on a protein-coding sequence. Within the CODEML program, there are three types of tests that can be run, but only 2/3 were used for this study.
 
 𝜔 = 𝑑𝑁⁄𝑑𝑆, so...
 - if 𝜔 = 1, then neutral evolution is occurring
@@ -10,10 +10,10 @@ PAML detects selection by estimating the ratio of non-synonymous to synonymous m
 - if 𝜔 < 1, the stabilizing selection is ongoing (under constraint)
 
 ### CODEML Tests ###
-- The branch model = detect positive selection driving adaptive protein evolution within specific lineages of the species phylogeny; allows 𝜔 to vary among branches and are specified in the variable model; use unrooted tree
-- The branch-site model = detect positive selection driving adaptive protein evolution within a subset of amino acids residues in the protein; allows 𝜔 to vary among lineages and across sites; specifies which branch to test for positive selection; use unrooted tree; compare null and alternate model
-- The site model = detect positive selection driving adaptive protein evolution affecting a subset of sites along a lineage specified *a priori*
-
+- The branch model = assume different ω ratio parameters for different branches on the phylogeny; detect positive selection acting on particular lineages, without averaging the ω ratio throughout the phylogenetic tree
+- The branch-site model = aim to detect positive selection that affects only a few sites on prespecified lineages, the foreground branch is the branch under test for positive selection
+- The site model = not used 
+  
 Note: all FASTA files need to be converted into PHYLIP format to be used in PAML, which is the preferred file format that stores a multiple sequence alignment. This is done using the script '12.convert-fasta-phylip.py'.
 
 ## Running PAML Models
