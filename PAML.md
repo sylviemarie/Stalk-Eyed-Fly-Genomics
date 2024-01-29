@@ -10,8 +10,8 @@ PAML detects selection by estimating the ratio of non-synonymous to synonymous m
 - if 𝜔 < 1, the stabilizing selection is ongoing (under constraint)
 
 ### CODEML tests ###
-- The branch model = detect positive selection driving adaptive protein evolution within specific lineages of the species phylogeny
-- The branch-site model = detect positive selection driving adaptive protein evolution within a subset of amino acids residues in the protein
+- The branch model = detect positive selection driving adaptive protein evolution within specific lineages of the species phylogeny; allows 𝜔 to vary among branches and are specified in the variable model; use unrooted tree
+- The branch-site model = detect positive selection driving adaptive protein evolution within a subset of amino acids residues in the protein; allows 𝜔 to vary among lineages and across sites; specifies which branch to test for positive selection; use unrooted tree; compare null and alternate model
 - The site model = detect positive selection driving adaptive protein evolution affecting a subset of sites along a lineage specified *a priori*
 
 Note: all FASTA files need to be converted into PHYLIP format to be used in PAML, which is the preferred file format that stores a multiple sequence alignment. This is done using the script '12.convert-fasta-phylip.py'.
