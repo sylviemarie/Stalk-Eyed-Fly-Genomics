@@ -22,17 +22,16 @@ Note: all FASTA files need to be converted into PHYLIP format to be used in PAML
 <img width="641" alt="Screen Shot 2024-01-29 at 2 52 27 PM" src="https://github.com/sylviemarie/Stalk-Eyed-Fly-Genomics/assets/116887272/82060269-e7ab-457d-93be-6defe67fc2f2">
 
 
-- The different models (m) represent the level of variation of ω between sites
+The different models (m) represent the level of variation of ω between sites
   - m = 0 for one ω ratio for all lineages
   - m = 1 for independent ω ratio for each branch (i.e. the ‘free-ratio’ model)
   - m = 2 for more than 1 ω ratio, specified in unrooted phylogenetic tree.
     
-- The nssites variable is the number of site classes being analyzed
+The nssites variable is the number of site classes being analyzed
   - n = 0 is used for one site class, where all sites in the gene evolve under the same ω
   - n = 1 is used for two site classes, where one site class has a fixed ω and the other site class can have a different ω
   - n = 2 is used for two site classes, where ω is allowed to vary in both
     
-- To estimate the ω ratio, fixed ω is set to 0, and to test for significance, fixed ω is
-set to 1.
-- The variable ω represents the dN/dS ratio and implies the degree of selective pressure
+To estimate the ω ratio, fixed ω is set to 0, and to test for significance, fixed ω is
+set to 1. The variable ω represents the dN/dS ratio and implies the degree of selective pressure
 (Alvarez-Carretero et al, 2023). 
