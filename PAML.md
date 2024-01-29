@@ -7,7 +7,7 @@ PAML detects selection by estimating the ratio of non-synonymous to synonymous m
 ### CODEML tests ###
 - The branch model = detect positive selection driving adaptive protein evolution within specific lineages of the species phylogeny
 - The branch-site model = detect positive selection driving adaptive protein evolution within a subset of amino acids residues in the protein
-- The site model = detect positive selection driving adaptive protein evolution affecting a subset of sites along a lineage specified _a priori _
+- The site model = detect positive selection driving adaptive protein evolution affecting a subset of sites along a lineage specified *a priori*
 
 Here, we provide a step-by-step protocol to illustrate the commonly used tests available in the program, including the branch models, the site models, and the branch-site models, which can be used to detect positive selection driving adaptive protein evolution affecting particular lineages of the species phylogeny, affecting a subset of amino acid residues in the protein, and affecting a subset of sites along prespecified lineages, respectivel
 
