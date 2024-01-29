@@ -9,6 +9,6 @@
 ## Python scripts pipeline (Python2 scripts from Dr. Alison Wright and updated to run on Python3)
 1. Identify reciprocal orthologs - via BLASTn reciprocal besthit analysis
 2. Identify open reading frames - select focal species and run a BLASTx analysis of ortologous sequences
-3. Align orthologs - using PRANK 
+3. Align orthologs - using PRANK, a phylogeny-aware probabilistic multiple alignment software 
 4. Mask alignments for poorly aligned regions - MEGA to manually delete poorly aligned regions and python to remove gaps
 5. Calculate evolutionary rates - PAML branch and branch-site models
