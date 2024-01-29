@@ -11,4 +11,4 @@
 2. Identify open reading frames - select focal species and run a BLASTx analysis of ortologous sequences
 3. Align orthologs - using PRANK, a phylogeny-aware probabilistic multiple alignment software 
 4. Mask alignments for poorly aligned regions - MEGA to manually delete poorly aligned regions and python to remove gaps
-5. Calculate evolutionary rates - PAML branch and branch-site models
+5. Calculate evolutionary rates and detect positive selection - PAML branch and branch-site models
