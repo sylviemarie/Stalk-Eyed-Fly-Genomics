@@ -33,5 +33,6 @@ Note: all FASTA files need to be converted into PHYLIP format to be used in PAML
   - n = 2 is used for two site classes, where ω is allowed to vary in both
     
 - To estimate the ω ratio, fixed ω is set to 0, and to test for significance, fixed ω is
-set to 1. The variable ω represents the dN/dS ratio and implies the degree of selective pressure
+set to 1.
+- The variable ω represents the dN/dS ratio and implies the degree of selective pressure
 (Alvarez-Carretero et al, 2023). 
