@@ -9,7 +9,7 @@ PAML detects selection by estimating the ratio of non-synonymous to synonymous m
 - if 𝜔 > 1, then adaptive/diversifying selection is at work (positive selection)
 - if 𝜔 < 1, the stabilizing selection is ongoing (under constraint)
 
-### CODEML tests ###
+### CODEML Tests ###
 - The branch model = detect positive selection driving adaptive protein evolution within specific lineages of the species phylogeny; allows 𝜔 to vary among branches and are specified in the variable model; use unrooted tree
 - The branch-site model = detect positive selection driving adaptive protein evolution within a subset of amino acids residues in the protein; allows 𝜔 to vary among lineages and across sites; specifies which branch to test for positive selection; use unrooted tree; compare null and alternate model
 - The site model = detect positive selection driving adaptive protein evolution affecting a subset of sites along a lineage specified *a priori*
