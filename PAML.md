@@ -16,7 +16,7 @@ PAML detects selection by estimating the ratio of non-synonymous to synonymous m
 
 Note: all FASTA files need to be converted into PHYLIP format to be used in PAML, which is the preferred file format that stores a multiple sequence alignment. This is done using the script '12.convert-fasta-phylip.py'.
 
-### Running PAML Models
+## Running PAML Models
 
 
 <img width="641" alt="Screen Shot 2024-01-29 at 2 52 27 PM" src="https://github.com/sylviemarie/Stalk-Eyed-Fly-Genomics/assets/116887272/82060269-e7ab-457d-93be-6defe67fc2f2">
