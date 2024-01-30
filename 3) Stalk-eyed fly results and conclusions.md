@@ -31,3 +31,24 @@ foreground branch, while all other genes have ω < 1.
 - The likelihood ratio statistic (2ΔlnL), degrees of freedom, and a chi-square distribution were used to estimate a p-value corresponding to each gene, see Table 6. For the cob gene, the alternative
 model was accepted by a statistically significant p-value < 0.05 as this model provided a better fit to explain the sequence alignment data over the null model. The p-value for cox1, cox3, nad1, nad4, and nad5 was high (> 0.05), and the null model was accepted as a better fit for the data. The PAML branch-site models were used to elucidate the selective pressure acting on different
 site classes within the cob gene.
+
+
+<img width="628" alt="MLE" src="https://github.com/sylviemarie/Stalk-Eyed-Fly-Genomics/assets/116887272/87d7a5f8-c2b8-4cdb-96ea-8229fb22b46b">
+
+- Maximum Likelihood Estimates (MLEs) for both the null and alternative models are summarized in Table 7, where site classes are used to model different patterns of sequence evolution and selective pressures. The null model assumes uniform selection across all sites, while the alternative model is more flexible and allows positive selection (ω > 1) in specific site classes. For site class 0 in cob, 93.9% of sites in the alt. model (ω = 0.006) and 95.8% of sites in the null model (ω = 0.012) are under negative selection with low ω values. For site class 1, 2.7% of sites in the alt. model and 4.2% in the null model are under neutral evolution or weak selection with ω = 1 for both models. For site class 2a, 3.2% of sites in the alt. model (background ω = 0.006, foreground ω = 216.967) and 0% of sites in the null model (background ω = 0.012, foreground ω = 1) are under moderate positive selection. For site class 2b, 0.1% of sites in the alt. model (background ω = 1, foreground ω = 216.967) and 0% of sites in the null model (background ω = 1, foreground ω = 1) are under moderate positive selection.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
