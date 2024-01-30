@@ -24,9 +24,8 @@
 Pipeline which identifies reciprocal orthologs via BLAST from fasta files.
 Naming of fasta files must be as follows: Speciesname.fa eg Oryziaslaptipes.fa
 
-* **python 00.get-longest-isoform.py**
-
-This script processes an Ensembl fasta file and picks the longest isoform for each gene. Outputs a new fasta file ending in _longest.fasta. This script will only work if fasta file is in Ensembl format.
+**python 00.get-longest-isoform.py**
+- This script processes an Ensembl fasta file and picks the longest isoform for each gene. Outputs a new fasta file ending in _longest.fasta. This script will only work if fasta file is in Ensembl format.
 
 * **python 01.run-blastall.py**
 
