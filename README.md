@@ -8,9 +8,9 @@ Mitochondrial genes encode **essential** proteins involved in cellular metabolis
 ### <ins> This repository will contain the following</ins> : 
 - Reference genome fasta and genbank files                       --> 'Reference genome'
 - Notes and scripts for running the MitoHiFi software            --> 'Shell scripts'
-- Mitochondrial genome analysis pipeline                         --> ...
+- Mitochondrial genome assembly pipeline                         --> '1) Stalk-eyed fly mitogenome assembly.md'
+- Mitochondrial genome analysis pipeline                         --> '2) Stalk-eyed fly comparative analysis.md'
 - Python scripts for mitogenome analysis                         --> 'Python scripts'
-- Insect mitogenomes used for reciprocal best hit (RBH) BLAST    --> ...
-- Results from mitogenome analysis                               --> ...
+- Results/conclusions from comparative genomic analysis          --> 'Results and conclusions'
 - Notes on software used for analysis                            --> 'Software'
 - Useful bits of code                                            --> 'Miscellaneous'
