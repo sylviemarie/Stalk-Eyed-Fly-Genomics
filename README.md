@@ -10,7 +10,7 @@ Mitochondrial genes encode **essential** proteins involved in cellular metabolis
 - Notes and scripts for running the various software             --> _Shell scripts_
 - Mitochondrial genome assembly pipeline                         --> _1) Stalk-eyed fly mitogenome assembly.md_
 - Mitochondrial genome analysis pipeline                         --> _2) Stalk-eyed fly comparative analysis.md_
+- Results/conclusions from comparative genomic analysis          --> _3) Stalk-eyed fly conclusions/results.md_
 - Python scripts for mitogenome analysis                         --> _Python scripts_
-- Results/conclusions from comparative genomic analysis          --> _Results and conclusions_
 - Notes on software used for analysis                            --> _Software_
 - Useful bits of code                                            --> _Miscellaneous_
