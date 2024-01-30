@@ -47,9 +47,9 @@ residue at site 34 (Asparagine) is likely under positive selection. For the Glyc
 # Brief conclusion:
 1) The _Teleopsis dalmanni_ mitochondrial genome retains many aspects of the highly conserved gene content and organization (e.g. all 37 genes - 2 rRNA, 22 tRNA, and 13 protein-coding), but was ~3.5kb longer than expected of an insect mitogenome.
    
-3) Three mitochondrial genes (_cob, cox1,_ and _nad4_) in _Teleopsis dalmanni_ are evolving at a faster rate relative to the background branches (i.e. the five other insects used in the comparative study.
+3) Three mitochondrial genes (_cob, cox1,_ and _nad4_) in _Teleopsis dalmanni_ are evolving at a faster rate relative to the background branches, i.e. the five other insects used in the comparative study.
    
-5) A clear signature of positive selection that was statistically signficant was detected in the _cob_ gene in Teleopsis dalmanni, as well as identifying five potential sites within this sequence under positive selection.
+5) A clear and statistically significant signature of positive selection was detected in the _cob_ gene in Teleopsis dalmanni, as well as five potential sites within this sequence were identified to be under positive selection.
 
 
 
