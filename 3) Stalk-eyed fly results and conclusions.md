@@ -38,8 +38,11 @@ site classes within the cob gene.
 - Maximum Likelihood Estimates (MLEs) for both the null and alternative models are summarized in Table 7, where site classes are used to model different patterns of sequence evolution and selective pressures. The null model assumes uniform selection across all sites, while the alternative model is more flexible and allows positive selection (ω > 1) in specific site classes. For site class 0 in cob, 93.9% of sites in the alt. model (ω = 0.006) and 95.8% of sites in the null model (ω = 0.012) are under negative selection with low ω values. For site class 1, 2.7% of sites in the alt. model and 4.2% in the null model are under neutral evolution or weak selection with ω = 1 for both models. For site class 2a, 3.2% of sites in the alt. model (background ω = 0.006, foreground ω = 216.967) and 0% of sites in the null model (background ω = 0.012, foreground ω = 1) are under moderate positive selection. For site class 2b, 0.1% of sites in the alt. model (background ω = 1, foreground ω = 216.967) and 0% of sites in the null model (background ω = 1, foreground ω = 1) are under moderate positive selection.
 
 
+<img width="627" alt="bayes empirical estimate" src="https://github.com/sylviemarie/Stalk-Eyed-Fly-Genomics/assets/116887272/32f6044f-0c84-4498-a183-87e2a06dbeb2">
 
-
+- The Bayes Empirical Bayes (BEB) analysis was used in the PAML branch-site alternative model to identify specific amino acid sites in the protein-coding cob sequence that are likely under
+positive selection promoting adaptive evolution, along particular branches. The results for the BEB analysis on cob are found in Table 8. There is a 53.4% probability that the amino acid
+residue at site 34 (Asparagine) is likely under positive selection. For the Glycine amino acid at site 71, there is a 83.9% probability it is under positive selection. There is a 60.4% probability that Valine at site 191 is likely under positive selection and a 78.6% probability that Leucine at site 241 is under diversifying selection. Valine at site 273 has a 74.2% probability that it is under positive selection.
 
 
 
