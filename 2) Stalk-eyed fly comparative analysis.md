@@ -12,3 +12,4 @@
 3. Align orthologs - using PRANK, a phylogeny-aware probabilistic multiple alignment software 
 4. Mask alignments for poorly aligned regions - MEGA to manually delete poorly aligned regions and python to remove gaps
 5. Calculate evolutionary rates and detect positive selection - PAML branch and branch-site models
+   > !!!Different PAML models are run by altering the prepare_PAML_input.py script, which then feeds into the run_PAML,py script!!!
