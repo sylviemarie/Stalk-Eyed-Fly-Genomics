@@ -25,15 +25,10 @@ Pipeline which identifies reciprocal orthologs via BLAST from fasta files.
 Naming of fasta files must be as follows: Speciesname.fa eg Oryziaslaptipes.fa
 
 * **python 00.get-longest-isoform.py**
-This script processes an Ensembl fasta file and picks the longest isoform for each gene. Outputs a new fasta file ending in _longest.fasta. This script will only work if fasta file is in Ensembl format eg
->ENSPFOT00000011287.1 cds:known scaffold:PoeFor_5.1.2:KI519728.1:726488:734097:-1 gene:ENSPFOG00000011302.1 gene_biotype:protein_coding transcript_biotype:protein_coding description:Uncharacterized protein  [Source:UniProtKB/TrEMBL;Acc:A0A087XZR8]
+This script processes an Ensembl fasta file and picks the longest isoform for each gene. Outputs a new fasta file ending in _longest.fasta. This script will only work if fasta file is in Ensembl format.
 
 * **python 01.run-blastall.py**
-This script automatizes a complete reciprocal besthit blast analysis.
-A list of input genomes is blasted against each other and output is written in provided format. Name of outfile is db name.query name.bla. Run with "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq".
-
-  Input genomes are fasta files containing one isoform per gene. Naming of fasta files must be as follows: Speciesname_longest.fasta eg Oryziaslaptipes_longest.fasta. [BLAST](http://blast.ncbi.nlm.nih.gov/Blast.cgi) must be compiled and added to the path of the user. *When it is added to PATH, no need to specify the path to blastn in the code.*
-
+This script automatizes a complete reciprocal besthit blast analysis. A list of input genomes is blasted against each other and output is written in provided format. Name of outfile is db name.query name.bla. Run with "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq". Input genomes are fasta files containing one isoform per gene. Naming of fasta files must be as follows: Speciesname_longest.fasta eg Oryziaslaptipes_longest.fasta. [BLAST](http://blast.ncbi.nlm.nih.gov/Blast.cgi) must be compiled and added to the path of the user. *When it is added to PATH, no need to specify the path to blastn in the code.*
 
    > Template: python 1.run-blastall.py -e 10e-10 -b blastn -p 4 -f "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq" species1_longest.fasta species2_longest.fa species3_longest.fasta species4_longest.fa
    
@@ -44,7 +39,8 @@ A list of input genomes is blasted against each other and output is written in p
 This script takes the outputs blast files of a reciprocal blast. 
 First, identifies tophit for each blast. Minimum 30 pidentity, then picks the tophit with greatest bitscore. If bitscores are identical then the blast hit with greatest pidentity is picked as the tophit. If multiple sequenced have the same bitscore and pidentity, the ortholog is discarded. Second, finds 1-1 reciprocal orthologs. The blastout output format supported is:
 "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq"
-   >  Sylvie's code: python new_top_hit.py -i /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit/input_blast -o /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit
+
+  >  Sylvie's code: python new_top_hit.py -i /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit/input_blast -o /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit
 
 
 * **python 03.ortho-cluster.py**
