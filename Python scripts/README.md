@@ -102,32 +102,29 @@ Tree should be unrooted eg ((Sp1,Sp2),Sp3,Sp4); Clean data option is turned off 
 **python 14.run-paml.py**
 - This script automatizes a paml analysis. [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html) must be compiled and added to the path of the user.
 
-* **SWAMP** 
+**SWAMP** 
+- See [manual](https://github.com/peterwharrison/SWAMP) for running [SWAMP](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4251194/). Often requires trying multiple windows and thresholds. Run branch-site model before and after masking to identify genes under positive selection. See if these genes are identified because the alignments are poor quality. Use this to guide the choice of masking criteria.
 
-     See [manual](https://github.com/peterwharrison/SWAMP) for running [SWAMP](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4251194/).
+     > python SWAMP.py -i ~/Input -b ~/branchcodes.txt -m 150 -t 7 -w 15 > ~/swampoutput
 
-     python SWAMP.py -i ~/Input -b ~/branchcodes.txt -m 150 -t 7 -w 15 > ~/swampoutput
-
-     Often requires trying multiple windows and thresholds. Run branch-site model before and after masking to identify genes under positive selection. See if these genes are identified because the alignments are poor quality. Use this to guide the choice of masking criteria.
 
 ## 5. Calculate evolutionary rates
 
-* **python 15.check-N.py**
-This script checks Ns in alignment are in multiples of 3. It checks that Ns are present in codons. Therefore, Ns can be removed in 15.remove-N.py without affecting the translation of the ORF.
+**python 15.check-N.py**
+- This script checks Ns in alignment are in multiples of 3. It checks that Ns are present in codons. Therefore, Ns can be removed in 15.remove-N.py without affecting the translation of the ORF.
 
-* **python 15.remove-N.py**
-This script removes masked sites (Ns) in the phylip alignment of each orthogroup. It removes alignments where the length after gap removal fails the cutoff threshold specified.
+**python 15.remove-N.py**
+- This script removes masked sites (Ns) in the phylip alignment of each orthogroup. It removes alignments where the length after gap removal fails the cutoff threshold specified.
 
-* **python 12.convert-fasta-phylip.py**
-This script converts specified file in a folder of folders into phylip format. All other files are removed. This step is necessary for Paml.
+**python 12.convert-fasta-phylip.py**
+- This script converts specified file in a folder of folders into phylip format. All other files are removed. This step is necessary for Paml.
 
-* **python 13.make-paml-input.py**
+- **python 13.make-paml-input.py**
 This script prepares sequences for PAML. Takes each folder of orthologous sequences and removes all files apart from phylip file.
-Tree should be unrooted eg ((Sp1,Sp2),Sp3,Sp4); Clean data option is turned on.
-The branch models allow the  ratio to vary among branches in the phylogeny and are useful for detecting positive selection acting on particular lineages
+Tree should be unrooted eg ((Sp1,Sp2),Sp3,Sp4); Clean data option is turned on. The branch models allow the  ratio to vary among branches in the phylogeny and are useful for detecting positive selection acting on particular lineages
 
-* **python 14.run-paml.py**
-This script automatizes a paml analysis. [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html) must be compiled and added to the path of the user.
+**python 14.run-paml.py**
+- This script automatizes a paml analysis. [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html) must be compiled and added to the path of the user.
 
 ###**Positive selection tests**
 
@@ -150,9 +147,7 @@ This script automatizes a paml analysis. [PAML](http://abacus.gene.ucl.ac.uk/sof
   * **Null model: python 13.make-paml-input.py Input tree.txt -model 0 -nssites 8 -fixomega 1 -omega 1**
   
 **python 16.paml-extract-loglikelihoods.py**
-This script takes the alternative and null model folders, extracts the log likelihoods and the difference
--2DL = -2*(likelihood_null-likelihood_alternative).
-To calculate the p-value use the Chisquared distribution. PAML has a function called Chi2 which takes the -2DL and degrees of freedom and outputs the p-value. Degrees of freedom are calculated as the difference in parameters between the null and alternative models. df = np_null - np_alternative.
+- This script takes the alternative and null model folders, extracts the log likelihoods and the difference: -2DL = -2*(likelihood_null-likelihood_alternative). To calculate the p-value use the Chisquared distribution. PAML has a function called Chi2 which takes the -2DL and degrees of freedom and outputs the p-value. Degrees of freedom are calculated as the difference in parameters between the null and alternative models. df = np_null - np_alternative.
 
 ###**Evolutionary rates**###
 
@@ -170,15 +165,15 @@ To calculate the p-value use the Chisquared distribution. PAML has a function ca
   * **python 13.make-paml-input.py Input tree.txt -model 2 -nssites 0 -fixomega 0 -omega .4**
 
 **python 16.paml-extract-branch-lengths-dSfilter.py**
-This script takes an infolder containing folders with the output of branch model test and outputs branch lengths for the specified branch. Filters orthologs with branch-specific dS >= 2.
+- This script takes an infolder containing folders with the output of branch model test and outputs branch lengths for the specified branch. Filters orthologs with branch-specific dS >= 2.
 
 **python 16.paml-extract-branch-lengths-dSSdSfilter.py**
-This script takes an infolder containing folders with the output of branch model test and outputs branch lengths for the specified branch. Filters orthologs with branch-specific dS >= 2 or if SdS for that branch is <= 1.
+- This script takes an infolder containing folders with the output of branch model test and outputs branch lengths for the specified branch. Filters orthologs with branch-specific dS >= 2 or if SdS for that branch is <= 1.
 
 ## Tidying scripts
 
-* **python 00.clean-folder.py**
-Removes all files in folder of folders that do not end in string specified. 
+**python 00.clean-folder.py**
+- Removes all files in folder of folders that do not end in string specified. 
 
-* **python 00.clean-folder-rename.py**
-Renames files in a folder of folders that end in string specified. 
+**python 00.clean-folder-rename.py**
+- Renames files in a folder of folders that end in string specified. 
