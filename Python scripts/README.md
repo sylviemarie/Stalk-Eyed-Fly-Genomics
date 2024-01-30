@@ -3,13 +3,8 @@
 
 1. Identify reciprocal orthologs
       - Only need to run the 00.get-longest-isoform.py script if there is more than one transcript per gene for each genome.
-      - For 01.run-blastall.py script, need to select and download a series of input mitochondrial genomes (protein seq.) you want to blast against each other.
-          - Small fruit fly (*Drosophila melanogaster*) -- family Drosophilidae
-          - African malaria mosquito (*Anopheles gambiae*)
-          - Western Honeybee (*Apis mellifera*)
-          - Domestic silk moth (*Bombyx mori*)
-          - Queensland fruit fly (*Bactrocera tryoni*) -- family Tephritidae
-          - Stalk-eyed fly (*Teleopsis dalmanni*)
+      - For 01.run-blastall.py script, need to select and download a series of input mitochondrial genomes (protein seq.) you want to blast against each other, see 2) Stalk-eyed fly comparative analysis.md for details on other organisms in comparative analysis.
+        
 2. Identify open reading frames
       - BLASTX
 4. Align orthologs
