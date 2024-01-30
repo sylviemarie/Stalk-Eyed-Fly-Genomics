@@ -72,40 +72,35 @@ Pipeline which identifies open reading frames of orthologous groups of sequences
 
 Pipeline which alignes open reading frames of reciprocal orthologs using PRANK. Alignments can then be filtered for length.
 
-* **python 09.make-prank-input.py**
-This script prepares sequences for prank alignment of orthologous sequences. Takes each folder of orthologous sequences and removes all files apart from cdna fasta file. Makes a new file with species names as the sequence id. Necessary for consistency with prank tree.
-Tree should be rooted eg (((Sp1,Sp2),Sp3),Sp4); and can contain branch lengths if available. 
+**python 09.make-prank-input.py**
+- This script prepares sequences for prank alignment of orthologous sequences. Takes each folder of orthologous sequences and removes all files apart from cdna fasta file. Makes a new file with species names as the sequence id. Necessary for consistency with prank tree. Tree should be rooted eg (((Sp1,Sp2),Sp3),Sp4); and can contain branch lengths if available. 
 
-* **python 10.run-prank.py**
-This script automatizes a prank alignment between reciprocal orthologs.
+**python 10.run-prank.py**
+- This script automatizes a prank alignment between reciprocal orthologs.[PRANK](http://wasabiapp.org/software/prank/) must be compiled and added to the path of the user. See attached Chapter 10 in Multiple Sequence Alignment Methods, Methods in Molecular Biology for details on parameters to run. Automatically runs with -DNA, -codon and -once.
 
-  [PRANK](http://wasabiapp.org/software/prank/) must be compiled and added to the path of the user. See attached Chapter 10 in Multiple Sequence Alignment Methods, Methods in Molecular Biology for details on parameters to run. Automatically runs with -DNA, -codon and -once.
+**python 11.check-gaps.py**
+- Optional: This script calculates the alignment length after removing gaps in the alignment. It reports how many alignments fail the cutoff threshold specified.
 
-* **python 11.check-gaps.py**
-Optional: This script calculates the alignment length after removing gaps in the alignment. It reports how many alignments fail the cutoff threshold specified.
-
-* **python 11.remove-gaps.py**
-This script removes gaps in the alignment of each orthogroup. It removes alignments where the length after gap removal fails the cutoff threshold specified.
+**python 11.remove-gaps.py**
+- This script removes gaps in the alignment of each orthogroup. It removes alignments where the length after gap removal fails the cutoff threshold specified.
 
 ## 4. Mask alignment for poorly aligned regions
 
-Pipeline which masked alignments for poorly aligned regions using SWAMP.
+Pipeline which masked alignments for poorly aligned regions using SWAMP. [SWAMP](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4251194/) scans multiple-sequence alignments for short regions enriched with unreasonably high rates of nonsynonymous substitutions caused, for example, by sequence or alignment errors. Input for SWAMP is one-ratio model (model = 0, NSsites = 0) in codeml with clean data off.
 
-[SWAMP](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4251194/) scans multiple-sequence alignments for short regions enriched with unreasonably high rates of nonsynonymous substitutions caused, for example, by sequence or alignment errors. Input for SWAMP is one-ratio model (model = 0, NSsites = 0) in codeml with clean data off.
+**PAML one-ratio model (model = 0, NSsites = 0)** 
 
-* **PAML one-ratio model (model = 0, NSsites = 0)** 
+**python 12.convert-fasta-phylip.py**
+- This script converts specified file in a folder of folders into phylip format. All other files are removed. This step is necessary for Paml.
 
-  * **python 12.convert-fasta-phylip.py**
-This script converts specified file in a folder of folders into phylip format. All other files are removed. This step is necessary for Paml.
-
-  * **python 13.make-paml-input-cleandataoff.py**
-This script prepares sequences for [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html). Takes each folder of orthologous sequences and removes all files apart from phylip file.
+**python 13.make-paml-input-cleandataoff.py**
+- This script prepares sequences for [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html). Takes each folder of orthologous sequences and removes all files apart from phylip file.
 Tree should be unrooted eg ((Sp1,Sp2),Sp3,Sp4); Clean data option is turned off as this is recommended for running SWAMP.
 
-     python 13.make-paml-input-cleandataoff.py ~/Desktop/I ~/Desktop/tree_4sp_paml.txt -model 0 -nssites 0 -fixomega 0 -omega .4
+     >python 13.make-paml-input-cleandataoff.py ~/Desktop/I ~/Desktop/tree_4sp_paml.txt -model 0 -nssites 0 -fixomega 0 -omega .4
 
-  * **python 14.run-paml.py**
-This script automatizes a paml analysis. [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html) must be compiled and added to the path of the user.
+**python 14.run-paml.py**
+- This script automatizes a paml analysis. [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html) must be compiled and added to the path of the user.
 
 * **SWAMP** 
 
