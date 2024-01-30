@@ -6,11 +6,11 @@ Mitochondrial genes encode **essential** proteins involved in cellular metabolis
 <img width="622" alt="Screen Shot 2024-01-26 at 4 05 29 PM" src="https://github.com/sylviemarie/Stalk-Eyed-Fly-Genomics/assets/116887272/bc4b81ab-338a-447b-9c5a-2390e42ac5d7">
 
 ### <ins> This repository will contain the following</ins> : 
-- Reference genome fasta and genbank files                       --> 'Reference genome'
-- Notes and scripts for running the various software             --> 'Shell scripts'
-- Mitochondrial genome assembly pipeline                         --> '1) Stalk-eyed fly mitogenome assembly.md'
-- Mitochondrial genome analysis pipeline                         --> '2) Stalk-eyed fly comparative analysis.md'
-- Python scripts for mitogenome analysis                         --> 'Python scripts'
-- Results/conclusions from comparative genomic analysis          --> 'Results and conclusions'
-- Notes on software used for analysis                            --> 'Software'
-- Useful bits of code                                            --> 'Miscellaneous'
+- Reference genome fasta and genbank files                       --> _Reference genome_
+- Notes and scripts for running the various software             --> _Shell scripts_
+- Mitochondrial genome assembly pipeline                         --> _1) Stalk-eyed fly mitogenome assembly.md_
+- Mitochondrial genome analysis pipeline                         --> _2) Stalk-eyed fly comparative analysis.md_
+- Python scripts for mitogenome analysis                         --> _Python scripts_
+- Results/conclusions from comparative genomic analysis          --> _Results and conclusions_
+- Notes on software used for analysis                            --> _Software_
+- Useful bits of code                                            --> _Miscellaneous_
