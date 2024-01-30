@@ -45,7 +45,8 @@ positive selection promoting adaptive evolution, along particular branches. The 
 residue at site 34 (Asparagine) is likely under positive selection. For the Glycine amino acid at site 71, there is a 83.9% probability it is under positive selection. There is a 60.4% probability that Valine at site 191 is likely under positive selection and a 78.6% probability that Leucine at site 241 is under diversifying selection. Valine at site 273 has a 74.2% probability that it is under positive selection.
 
 # Brief conclusion:
-1) _Teleopsis dalmanni_ is evolving at a faster rate
+1) Three mitochondrial genes (cob, cox1, and nad4) in _Teleopsis dalmanni_ are evolving at a faster rate relative to the background branches (i.e. the five other insects used in the comparative study.
+2) 
 
 
 
