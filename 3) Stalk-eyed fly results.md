@@ -44,7 +44,8 @@ site classes within the cob gene.
 positive selection promoting adaptive evolution, along particular branches. The results for the BEB analysis on cob are found in Table 8. There is a 53.4% probability that the amino acid
 residue at site 34 (Asparagine) is likely under positive selection. For the Glycine amino acid at site 71, there is a 83.9% probability it is under positive selection. There is a 60.4% probability that Valine at site 191 is likely under positive selection and a 78.6% probability that Leucine at site 241 is under diversifying selection. Valine at site 273 has a 74.2% probability that it is under positive selection.
 
-
+# Brief conclusion:
+1) _Teleopsis dalmanni_ is evolving at a faster rate
 
 
 
