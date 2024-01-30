@@ -34,18 +34,17 @@ Naming of fasta files must be as follows: Speciesname.fa eg Oryziaslaptipes.fa
    
    > Sylvie's code: python 01_run_blast_all.py -e 10e-10 -b blastn -p 4 -f "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq" Teleopsisdalmanni_longest.fasta Anophelesgambiae_longest.fasta Apismellifera_longest.fasta Drosophilamelanogaster_longest.fasta Heliconiusmelpomene_longest.fasta Zootermopsisnevadensis_longest.fasta
 
-
-* **python 02.top-blasthit.py**
-This script takes the outputs blast files of a reciprocal blast. 
+**python 02.top-blasthit.py**
+- This script takes the outputs blast files of a reciprocal blast. 
 First, identifies tophit for each blast. Minimum 30 pidentity, then picks the tophit with greatest bitscore. If bitscores are identical then the blast hit with greatest pidentity is picked as the tophit. If multiple sequenced have the same bitscore and pidentity, the ortholog is discarded. Second, finds 1-1 reciprocal orthologs. The blastout output format supported is:
 "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq"
 
   >  Sylvie's code: python new_top_hit.py -i /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit/input_blast -o /fastdata/bop22smp/mitogenome/evol_rates/top_blast_hit
 
+**python 03.ortho-cluster.py**
+- This script takes the pickle output of reciprocal orthologs and identifies clusters of reciprocal orthologs.
 
-* **python 03.ortho-cluster.py**
-This script takes the pickle output of reciprocal orthologs and identifies clusters of reciprocal orthologs.
-   >  Sylvie's code: python ortho_cluster.py -i /fastdata/bop22smp/mitogenome/comp_gen_fasta/03_input.pkl -o 03_output -s Ti,Drosophilamelanogaster,Bactroceratryoni,Bombyxmori,Anophelesgambiae,Apismellifera
+  >  Sylvie's code: python ortho_cluster.py -i /fastdata/bop22smp/mitogenome/comp_gen_fasta/03_input.pkl -o 03_output -s Teleopsisdalmanni,Drosophilamelanogaster,Bactroceratryoni,Bombyxmori,Anophelesgambiae,Apismellifera
 
 
 ## 2. Identify open reading frames
