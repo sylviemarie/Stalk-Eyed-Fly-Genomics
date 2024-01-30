@@ -51,24 +51,22 @@ First, identifies tophit for each blast. Minimum 30 pidentity, then picks the to
 
 Pipeline which identifies open reading frames of orthologous groups of sequences via BLASTx.
 
-* **python 04.make-blastx-input.py**
-This script prepares sequences for blastx analysis of orthologous sequences.Takes orthogroups and creates a folder for each. In each folder, a query fasta file is made with each nucleotide sequence. Users must specify a focal species and supply a fasta file containing protein sequences. This species forms the reference off which to identify open reading frames in the other species.Run with "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq".
+**python 04.make-blastx-input.py**
+- This script prepares sequences for blastx analysis of orthologous sequences.Takes orthogroups and creates a folder for each. In each folder, a query fasta file is made with each nucleotide sequence. Users must specify a focal species and supply a fasta file containing protein sequences. This species forms the reference off which to identify open reading frames in the other species.Run with "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sseq".
 
-* **python 05.run-blastx.py**
-This script automatizes a blastx analysis of orthologous sequences. Takes each orthogroup folder and runs Blastx. [BLAST](http://blast.ncbi.nlm.nih.gov/Blast.cgi) must be compiled and added to the path of the user.This script takes the output of blastx for each orthogroup and identifies the open reading frame. Need blast format
-'6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qframe sframe sseq'
+**python 05.run-blastx.py**
+- This script automatizes a blastx analysis of orthologous sequences. Takes each orthogroup folder and runs Blastx. [BLAST](http://blast.ncbi.nlm.nih.gov/Blast.cgi) must be compiled and added to the path of the user.This script takes the output of blastx for each orthogroup and identifies the open reading frame. Need blast format '6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qframe sframe sseq'
 
-    >python 05.run-blastx.py Blastx_folder -e 10e-10 -f "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qframe sframe sseq" -b blastx
+    >Sylvie's code: python run-blastx.py Blastx_folder -e 10e-10 -f "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qframe sframe sseq" -b blastx
 
-* **python 06.orf-prediction.py**
-This script takes the output of blastx for each orthogroup and identifies the open reading frame. Need blast format
-'6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qframe sframe sseq'
+**python 06.orf-prediction.py**
+- This script takes the output of blastx for each orthogroup and identifies the open reading frame. Need blast format '6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qframe sframe sseq'
 
-* **OPTIONAL: python 07.orf-stats.py**
-This script calculates basic statistics about the length and number of open reading frames.
+**OPTIONAL: python 07.orf-stats.py**
+-This script calculates basic statistics about the length and number of open reading frames.
 
-* **OPTIONAL: python 08.check-protein.py**
-This script takes each orthogroup and checks that each species with an Ensembl protein file has a protein fasta sequence. 
+**OPTIONAL: python 08.check-protein.py**
+- This script takes each orthogroup and checks that each species with an Ensembl protein file has a protein fasta sequence. 
 
 ## 3. Align orthologs
 
